@@ -21,7 +21,7 @@ mysql_password = st.sidebar.text_input("MySQL Password", type="password", value=
 
 api_key = os.getenv("GROQ_API_KEY")
 
-# 🔌 Connect button
+# Connect button
 if st.sidebar.button("🔌 Connect to Database"):
     if mysql_host and mysql_port and mysql_db and mysql_user and mysql_password:
         st.session_state["connect_clicked"] = True
